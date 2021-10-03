@@ -1,0 +1,48 @@
+.form {
+  text-align: center;
+  font-size: 25px;
+  font-family: URW Chancery L, cursive;
+  justify-content: center;
+  position: absolute;
+  margin: 0px auto;
+  margin-left: 25%;
+}
+
+.formheader {
+  color: purple;
+  font-size: 50px;
+  font-family: Snell Roundhand, cursive;
+  width: 100%;
+  height: 100px;
+  margin-left: 1px;
+  padding: 10px;
+}
+
+.form-label {
+  font: 300px;
+}
+
+#btn_login {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  border-radius: 3em;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  margin: 0px auto;
+  margin-left: 38%;
+}
+
+.info {
+  color: red;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 35px;
+  margin-left: 20px;
+  padding: 1px;
+  position: absolute;
+  width: 100%;
+}

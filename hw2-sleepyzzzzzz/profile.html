@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Yi Zhou">
+	<meta name="description" content="Profile Page">
+	<meta charset="utf-8">
+	<title>Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<h1 style="text-align: center">Profile Page</h1>
+	<div  style="text-align: right">
+		<button id="return" onclick="link()">Return To Main Page</button>
+		<br><br>
+	</div>
+	<table class="profileupdate">
+		<tr>
+			<th class="profile_field">Display Name</th>
+			<td class="profile_field">
+				<input type="text" name="display_name" id="display_name" class="input_field">
+			</td>
+			<td id="display_name_field" class="display_field">Yi</td>
+		</tr>
+		<tr>
+			<th class="profile_field">Email Address</th>
+			<td class="profile_field">
+				<input type="email" name="email" id="email" class="input_field">
+			</td>
+			<td id="email_field" class="display_field">yz166@rice.edu</td>
+		</tr>
+		<tr>
+			<th class="profile_field">Phone Number</th>
+			<td class="profile_field">
+				<input type="tel" name="phone" id="phone" class="input_field">
+			</td>
+			<td id="phone_field" class="display_field">123-123-1234</td>
+		</tr>
+		<tr>
+			<th class="profile_field">Zipcode</th>
+			<td class="profile_field">
+				<input type="text" name="zipcode" id="zipcode" class="input_field">
+			</td>
+			<td id="zipcode_field" class="display_field">77005</td>
+		</tr>
+		<tr>
+			<th class="profile_field">Password</th>
+			<td class="profile_field">
+				<input type="password" name="pwd" id="password" class="input_field">
+			</td>
+			<td id="password_field" class="display_field">***</td>
+		</tr>
+		<tr>
+			<th class="profile_field">Password Confirmation</th>
+			<td class="profile_field">
+				<input type="password" name="pwdc" id="passwordconfirm" class="input_field">
+			</td>
+			<td id="passwordconfirm_field" class="display_field">***</td>
+		</tr>
+	</table>
+	<br>
+	<div style="text-align: center">
+		<button type="button" name="update" id="update" class="button">Update</button>
+		<br><br>
+	</div>
+	<div id="msg" style="text-align: center; visibility: hidden">Updates:</div>
+	<br>
+	<div id="msg1" style="text-align: center; visibility: hidden">Alerts:</div>
+
+	<script type="text/javascript" src="profile.js"></script>
+</body>
+
+</html>

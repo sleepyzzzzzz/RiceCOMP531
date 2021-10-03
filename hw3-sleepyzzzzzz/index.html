@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Yi Zhou">
+	<meta name="description" content="Wheel Hit">
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<div class="pages" id="info">
+		<div class="msg" id="name">WHEEL HIT</div><br>
+		<button class="btn" id="start">START</button>
+		<br><br>
+		<button class="btn" id="manual">MANUAL</button>
+		<br><br>
+		<button class="btn" id="statistic">SCORE HISTORY</button>
+	</div>
+	<div class="pages" id="manualpage">
+		<p class="title">MANUAL</p>
+		<p id="maualcontent">
+			Hit the area below Score<br>
+			Hit to insert the ball<br>
+			Balls cannot touch with each other<br>
+			Much harder as Level goes up<br><br><br>
+			HAVE FUN!
+		</p>
+		<button class="btn" id="back1">BACK TO MAIN PAGE</button>
+	</div>
+	<div class="pages" id="board">
+		<div id="Level">
+			<span>Level </span>
+			<span id="number"></span>
+			<button id="pause">PAUSE</button>
+		</div>
+		<div id="ScorePause">
+			<span>Score: </span>
+			<span id="score"></span><br>
+			<span>#Pause: </span>
+			<span id="pausenum"></span>
+		</div>
+		<div id="clickarea">
+			<div id="rotate"></div>
+			<div id="inballs"></div>
+		</div>
+	</div>
+	<div class="pages" id="fail">
+		<div class="msg">Fail</div>
+		<br>
+		<button class="btn" id="main">MAIN PAGE</button>
+		<br><br>
+		<button class="btn" id="restart">RESTART</button>
+		<br><br>
+		<button class="btn" id="statistic1">SCORE HISTORY</button>
+	</div>
+	<div class="pages" id="scorehistory">
+		<p class="title">Score & Pause History</p>
+		<p id="ps">(start from best score / only top20 will be shown)</p>
+		<br>
+		<table id="scorelist"></table>
+		<button class="btn" id="restart1">RESTART</button>
+		<button class="btn" id="back">BACK TO MAIN PAGE</button>
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>

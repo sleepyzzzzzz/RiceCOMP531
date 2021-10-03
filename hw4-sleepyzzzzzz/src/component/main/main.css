@@ -1,0 +1,107 @@
+.container_main {
+  margin: 0px auto;
+  margin: 30px;
+  margin-left: -100px;
+  width: 300%;
+}
+
+.link {
+  font-size: 25px;
+  font-family: URW Chancery L, cursive;
+  font-variant: small-caps;
+  color: darkmagenta;
+}
+
+.row {
+  shape-margin: 10px;
+}
+
+.images {
+  width: 250px;
+  height: 150px;
+  position: relative;
+}
+
+.uploading {
+  display: none;
+}
+
+#title1 {
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: Snell Roundhand, cursive;
+  background-color: darkslateblue;
+  width: 60%;
+  height: 70%;
+  margin: 0px auto;
+  padding: 10px;
+  margin-right: 0;
+}
+
+#carousel_follow {
+  position: relative;
+  text-align: center;
+  background-color: lightskyblue;
+  width: 300%;
+  background-size: 100%, 100%;
+}
+
+#carousel_post {
+  text-align: center;
+  background-color: lightskyblue;
+  background-size: 100%, 100%;
+}
+
+.card {
+  background-color: lightskyblue;
+  border-color: lightskyblue;
+  text-align: center;
+}
+
+.user_info {
+  text-align: center;
+  margin: 0px auto;
+  margin-left: 40%;
+}
+
+.user_status {
+  text-align: center;
+  margin: 0px auto;
+  margin-left: 23%;
+}
+
+.info_btn {
+  text-align: center;
+  margin: 0px auto;
+  margin-left: 31%;
+}
+
+.post_info {
+  text-align: center;
+  margin: 0px auto;
+  margin-left: 48%;
+}
+
+.post_time {
+  text-align: center;
+  margin: 0px auto;
+  margin-left: 43%;
+}
+
+.add_follow {
+  margin: 0px auto;
+  margin-left: 50%;
+}
+
+.btn {
+  text-align: center;
+  border-radius: 2em;
+  width: 150px;
+  height: 35px;
+}
+
+.btn_upload {
+  border-radius: 2em;
+  width: 120px;
+  height: 120px;
+}

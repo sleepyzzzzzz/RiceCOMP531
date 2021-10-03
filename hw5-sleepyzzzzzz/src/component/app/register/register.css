@@ -1,0 +1,25 @@
+.form_reg {
+  text-align: center;
+  font-size: 15px;
+  font-family: URW Chancery L, cursive;
+  margin: 0px auto;
+}
+
+.register-info {
+  color: red;
+  font-size: 15px;
+  font-family: Snell Roundhand, cursive;
+  text-align: center;
+}
+
+#btn-reg,
+#btn-reset {
+  border-radius: 8em;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}

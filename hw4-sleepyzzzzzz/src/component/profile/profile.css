@@ -1,0 +1,33 @@
+.container_profile {
+  margin: 0px auto;
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 800%;
+}
+
+#container_display {
+  width: 100%;
+  margin-left: -25%;
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+}
+
+.form_update {
+  text-align: center;
+  font-size: 15px;
+  font-family: URW Chancery L, cursive;
+  margin: 0px auto;
+}
+
+#btn_upload {
+  border-radius: 3em;
+  text-align: center;
+  margin-left: 5%;
+  width: 200px;
+}
+
+#btn_update {
+  border-radius: 3em;
+  text-align: center;
+  width: 200px;
+}
