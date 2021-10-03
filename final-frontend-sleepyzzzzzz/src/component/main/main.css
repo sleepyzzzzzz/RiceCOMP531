@@ -1,0 +1,189 @@
+#main-page {
+  margin: 0.5%;
+}
+
+.User-Info,
+.User-Follow {
+  background-color: lightcyan;
+}
+
+.links {
+  text-align: center;
+  font-size: 25px;
+  font-family: URW Chancery L, cursive;
+  font-variant: small-caps;
+  color: darkmagenta;
+  position: relative;
+}
+
+.uploading {
+  display: none;
+}
+
+.btn-upload {
+  border-radius: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-upload-img {
+  border-radius: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+#btn-cancel,
+#btn-post,
+#btn-edit,
+#btn-comment,
+#btn-comment-update,
+#btn-comment-back {
+  border-radius: 8em;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}
+
+#btn-update,
+#btn-addfollow,
+.btn-unfollow,
+#btn-search {
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}
+
+.btn-grid {
+  position: relative;
+  text-align: center;
+}
+
+#user-info {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.follow-info,
+.article-info,
+.comment-info {
+  text-align: center;
+  color: red;
+  font-size: 15px;
+  font-family: Snell Roundhand, cursive;
+}
+
+#profile-img {
+  position: relative;
+  text-align: center;
+}
+
+#user-img {
+  margin: auto;
+  width: 38%;
+  height: 200px;
+}
+
+.btn-upload-text {
+  position: relative;
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+  font-size: large;
+  margin-bottom: 15%;
+}
+
+.post-header {
+  align-items: center;
+}
+
+.post-info {
+  position: relative;
+  font-size: 18px;
+  font-family: Snell Roundhand, cursive;
+  width: 100%;
+  padding-left: 7%;
+}
+
+.post-img {
+  position: relative;
+  text-align: center;
+}
+
+#comment-time {
+  font-size: 12px;
+  font-family: Snell Roundhand, cursive;
+}
+
+.images {
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper-follower {
+  max-height: 370px;
+  border: 1px solid gainsboro;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.wrapper-posts {
+  border: 1px solid gainsboro;
+  overflow-y: auto;
+}
+
+.nav-tabs {
+  font-size: 10px;
+  background-color: lightcyan;
+}
+
+#controlled-tab-tab-all {
+  background-color: cyan;
+  font-size: 2em;
+  height: 2em;
+  color: white;
+}
+
+#controlled-tab-tab-follow {
+  background-color: cyan;
+  font-size: 2em;
+  height: 2em;
+  color: white;
+}
+
+.btns-comments {
+  text-align: center;
+  margin-left: 50%;
+}
+
+.page-info {
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+.pages-select {
+  margin: auto;
+}
+
+.search-page-input {
+  margin-top: 1%;
+  width: 20%;
+}
+
+#btn-search-page,
+#btn-search-page1 {
+  outline: auto;
+  outline-color: darkblue;
+  color: darkblue;
+  width: 100%;
+  height: 80%;
+}

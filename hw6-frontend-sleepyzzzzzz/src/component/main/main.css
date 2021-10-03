@@ -1,0 +1,144 @@
+#main-page {
+  margin: 0.5%;
+}
+
+.User-Follow {
+  background-color: lightcyan;
+}
+
+.links {
+  text-align: center;
+  font-size: 25px;
+  font-family: URW Chancery L, cursive;
+  font-variant: small-caps;
+  color: darkmagenta;
+  position: relative;
+}
+
+.uploading {
+  display: none;
+}
+
+#btn-upload {
+  border-radius: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+#btn-upload-img {
+  border-radius: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+#btn-cancel,
+#btn-post,
+#btn-edit,
+#btn-comment {
+  border-radius: 8em;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}
+
+#btn-update,
+#btn-addfollow,
+.btn-unfollow,
+#searchauthor,
+#searchtext {
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}
+
+.btn-grid {
+  position: relative;
+  text-align: center;
+}
+
+#user-info {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.uinfo {
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+  color: darkblue;
+}
+
+.follow-info {
+  text-align: center;
+  color: red;
+  font-size: 15px;
+  font-family: Snell Roundhand, cursive;
+}
+
+#profile-img {
+  position: relative;
+  text-align: center;
+}
+
+#user-img {
+  width: 30%;
+  height: 150px;
+}
+
+#btn-upload-text {
+  position: relative;
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+  font-size: large;
+  margin-bottom: 15%;
+}
+
+.post-header {
+  align-items: center;
+}
+
+.post-info {
+  position: relative;
+  font-size: 18px;
+  font-family: Snell Roundhand, cursive;
+  width: 100%;
+  padding-left: 7%;
+}
+
+.post-img {
+  position: relative;
+  text-align: center;
+}
+
+#comment-time {
+  font-size: 12px;
+  font-family: Snell Roundhand, cursive;
+}
+
+.images {
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper-follower {
+  max-height: 370px;
+  border: 1px solid gainsboro;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.wrapper-posts {
+  max-height: 520px;
+  border: 1px solid gainsboro;
+  overflow-y: auto;
+  overflow-x: auto;
+}

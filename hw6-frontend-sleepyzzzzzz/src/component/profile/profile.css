@@ -1,0 +1,72 @@
+.profile-page {
+  margin: 0.5%;
+}
+
+#profile-img {
+  position: relative;
+  text-align: center;
+  margin: 1%;
+}
+
+#user-img-profile {
+  width: 15%;
+  height: 55%;
+}
+
+#profile-upload {
+  position: relative;
+  text-align: center;
+  margin-top: 0.5%;
+}
+
+#btn_upload {
+  border-radius: 8em;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}
+
+#container_display {
+  width: 100%;
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+}
+
+.form-update {
+  text-align: center;
+  font-size: 15px;
+  font-family: URW Chancery L, cursive;
+  margin: 0px auto;
+}
+
+.updates {
+  position: relative;
+  text-align: center;
+}
+
+#profile-btn {
+  position: relative;
+  text-align: center;
+}
+
+#btn-update-info {
+  border-radius: 8em;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}
+
+#update-info {
+  color: red;
+  font-size: 15px;
+  font-family: Snell Roundhand, cursive;
+  text-align: center;
+}

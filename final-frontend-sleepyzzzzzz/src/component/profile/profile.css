@@ -1,0 +1,114 @@
+.profile-page {
+  margin: 0.5%;
+}
+
+.profile-pgs {
+  text-align: center;
+  width: max-content;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.profile-pgs-link {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+#profile-img {
+  position: relative;
+  text-align: center;
+  margin: 5% 25%;
+}
+
+#user-img-profile {
+  margin: auto;
+  width: 100%;
+  height: 200px;
+}
+
+#container_display {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-family: Snell Roundhand, cursive;
+}
+
+#profile-upload {
+  position: relative;
+  text-align: center;
+  margin-top: 0.5%;
+}
+
+#btn_upload {
+  border-radius: 8em;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}
+
+.form-update {
+  text-align: center;
+  font-size: 15px;
+  font-family: URW Chancery L, cursive;
+  margin: 0px auto;
+}
+
+.profile-form-title {
+  margin-top: 5%;
+  margin-left: -18%;
+  font-family: URW Chancery L, cursive;
+  font-size: 30px;
+}
+
+.profile-form-title1 {
+  margin-top: 10%;
+  margin-left: -10%;
+  font-family: URW Chancery L, cursive;
+  font-size: 30px;
+}
+
+.updates {
+  position: relative;
+  text-align: center;
+  margin-top: 10%;
+}
+
+#profile-btn,
+#profile-reset-btn {
+  position: relative;
+  text-align: center;
+  margin-left: -18%;
+}
+
+#btn-update-info,
+#btn-reset-update-info,
+#btn-link-account,
+#btn-unlink-account {
+  border-radius: 8em;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: max-content;
+  height: max-content;
+  margin: 0px auto;
+}
+
+#update-info,
+#link-info {
+  color: red;
+  font-size: 15px;
+  font-family: Snell Roundhand, cursive;
+  text-align: center;
+}
+
+#img-update {
+  text-align: center;
+  margin-left: 20%;
+}

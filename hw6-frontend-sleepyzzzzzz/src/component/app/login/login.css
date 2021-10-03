@@ -1,0 +1,43 @@
+.form {
+  text-align: center;
+  font-size: 25px;
+  font-family: URW Chancery L, cursive;
+  justify-content: center;
+  position: absolute;
+  margin: 0px auto;
+  margin-left: 25%;
+}
+
+.formheader {
+  color: purple;
+  font-size: 50px;
+  font-family: Snell Roundhand, cursive;
+  width: 100%;
+  height: 100px;
+  margin-left: 1px;
+  padding: 10px;
+}
+
+.form-label {
+  font: 300px;
+}
+
+#btn-login {
+  border-radius: 8em;
+  font-weight: bold;
+  font-family: Snell Roundhand, cursive;
+  background-color: dodgerblue;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  margin: 0px auto;
+}
+
+.login-info {
+  color: red;
+  font-size: 15px;
+  font-family: Snell Roundhand, cursive;
+  text-align: center;
+  padding: 1px;
+  position: absolute;
+}

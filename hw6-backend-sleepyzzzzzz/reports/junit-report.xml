@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Validate Auth" errors="0" tests="8" failures="0" time="0.925" timestamp="2020-11-14T15:55:31">
+  <testcase classname="Validate Auth" name="validate POST /register: Register a new user named &amp;quot;testUser&amp;quot; with password &amp;quot;123&amp;quot;" time="0.09"></testcase>
+  <testcase classname="Validate Auth" name="validate POST /login: Log in as &amp;quot;testUser&amp;quot;" time="0.065"></testcase>
+  <testcase classname="Validate Auth" name="validate PUT /headline: Update the status headline and verify the change" time="0.13"></testcase>
+  <testcase classname="Validate Auth" name="validate GET /headline: Update the status headline and verify the change" time="0.071"></testcase>
+  <testcase classname="Validate Auth" name="validate POST /article: Create a new article and verify that the article was added" time="0.348"></testcase>
+  <testcase classname="Validate Auth" name="validate GET /articles" time="0.131"></testcase>
+  <testcase classname="Validate Auth" name="validate GET /articles/id" time="0.073"></testcase>
+  <testcase classname="Validate Auth" name="validate PUT /logout: Log out &amp;quot;testUser&amp;quot;" time="0.012"></testcase>
+</testsuite>
+</testsuites>
