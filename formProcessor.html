@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Yi Zhou">
+	<meta name="description" content="Form Processor Page">
+	<meta charset="utf-8">
+</head>
+
+<body onload="displaying()">
+	
+</body>
+
+<script type="text/javascript">
+	var url = location.search;
+	var urls = url.substr(1);
+	var contents = urls.split("&");
+	contents.pop();
+
+	function displaying() {
+		var table = document.createElement("table");
+		table.setAttribute("border","1");
+		var tBody = document.createElement("tBody");
+
+		contents.forEach(function(element) {
+			var onecontent = element.split("=");
+			var key = onecontent[0];
+			var value = onecontent[1];
+			if (key == "email") {
+				value = unescape(value);
+			}
+			else if (key == "pwd" || key == "pwdc") {
+				value = "*".repeat(value.length);
+			}
+			else if (key == "timestamp") {
+				var datetime = new Date();
+				datetime.setTime(value * 1000)
+				value = datetime.toString();
+			}
+			var tr = document.createElement("tr");
+			var th = document.createElement("th");
+			th.innerHTML = key;
+			var td = document.createElement("td");
+			td.innerHTML = value;
+			tr.appendChild(th);
+			tr.appendChild(td);
+			tBody.appendChild(tr);
+		});
+		table.appendChild(tBody);
+		document.body.appendChild(table);
+	}
+</script>
+
+</html>
