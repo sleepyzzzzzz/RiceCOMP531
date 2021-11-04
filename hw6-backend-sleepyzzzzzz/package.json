@@ -25,6 +25,7 @@
     "es6-promise": "^4.2.8",
     "express": "^4.17.1",
     "isomorphic-fetch": "^3.0.0",
+    "jasmine-node": "^3.0.0",
     "md5": "^2.3.0",
     "mongoose": "^5.10.13",
     "mongoose-sequence": "^5.3.0",
