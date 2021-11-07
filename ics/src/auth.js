@@ -1,5 +1,5 @@
 const md5 = require('md5');
-// const redis = require('redis').createClient('redis://h:pd4d2fe14cd32c8be1c2f67a2e58aab33de6a860ee73395f609cc45e3a7479d08@ec2-3-211-169-9.compute-1.amazonaws.com:8679');
+const redis = require('redis').createClient('redis://:p71b680bc3c2868f224da1399df5c857dca19ee4a60416e862a3c202dc3281ac1@ec2-3-222-30-58.compute-1.amazonaws.com:26260');
 
 let sessionUser = {};
 let cookieKey = "sid";
