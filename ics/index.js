@@ -5,8 +5,8 @@ const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const userSchema = require('./src/userSchema');
 const User = mongoose.model('user', userSchema);
-// const connectionString = 'mongodb+srv://dbccc:1711@ctest.s3vxw.mongodb.net/Social?retryWrites=true&w=majority';
-const connectionString = 'mongodb+srv://dbccc:1711@cluster0.h4kr0.mongodb.net/Social?retryWrites=true&w=majority'
+// const connectionString = 'mongodb+srv://dbccc:@ctest.s3vxw.mongodb.net/Social?retryWrites=true&w=majority';
+const connectionString = 'mongodb+srv://dbccc:@cluster0.h4kr0.mongodb.net/Social?retryWrites=true&w=majority'
 
 
 
