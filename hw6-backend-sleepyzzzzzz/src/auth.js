@@ -85,7 +85,7 @@ const login = (req, res) => {
             let sessionKey = md5(mySecretMessage + new Date().getTime() + userObj.username);
             sessionUser[sessionKey] = userObj;
             res.cookie(cookieKey, sessionKey, { maxAge: 3600 * 1000, httpOnly: true, sameSite: 'None', secure: true });
-            // res.cookie(cookieKey, sessionKey, { maxAge: 3600 * 1000, httpOnly: true })
+            // res.cookie(cookieKey, sessionKey, { maxAge: 3600 * 1000, httpOnly: true, sameSite: 'None' })
             let msg = { username: username, result: 'success' };
             res.status(200).send(msg);
         }
@@ -96,6 +96,7 @@ const login = (req, res) => {
 }
 
 const isLoggedIn = (req, res, next) => {
+    console.log(req.cookies);
     let id = req.cookies[cookieKey];
     if (!id) {
         return res.status(401).send('No session key for cookie key');
@@ -140,11 +141,30 @@ const putPassword = (req, res) => {
         });
 }
 
+async function updatePwd(req, res) {
+    let password = req.body.password;
+    if (!password) {
+        res.send("Password is not found");
+        return;
+    }
+    console.log(req);
+    let salt = req.user.username + new Date().getTime();
+    let hash = md5(salt + password);
+    console.log(req.user.username);
+    const res1 = await User.updateOne(
+        { username: req.user.username },
+        { $set: { salt: salt, hash: hash } });
+    console.log(res1);
+    let msg = { username: req.username, result: 'success' };
+    res.send(msg);
+}
+
 module.exports = (app) => {
     app.use(cookieParser());
     app.post('/register', register);
     app.post('/login', login);
     app.use(isLoggedIn);
     app.put('/logout', logout);
-    app.put('/password', putPassword);
+    // app.put('/password', putPassword);
+    app.put('/password', updatePwd);
 }

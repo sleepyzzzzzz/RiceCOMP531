@@ -1,6 +1,6 @@
 const md5 = require('md5');
 const cookieParser = require('cookie-parser');
-const redis = require('redis').createClient(process.env.REDIS_URI);
+// const redis = require('redis').createClient(process.env.REDIS_URI);
 const session = require('express-session');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;

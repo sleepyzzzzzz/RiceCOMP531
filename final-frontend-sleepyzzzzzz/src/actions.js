@@ -1,6 +1,6 @@
 import axios from 'axios';
-// export const url = path => `http://localhost:3000${path}`;
-export const url = path => `https://yz166-final-backend.herokuapp.com${path}`;
+export const url = path => `http://localhost:3000${path}`;
+// export const url = path => `https://yz166-final-backend.herokuapp.com${path}`;
 axios.defaults.withCredentials = true;
 
 export const goMain = () => ({

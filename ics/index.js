@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const userSchema = require('./src/userSchema');
 const User = mongoose.model('user', userSchema);
 // const connectionString = 'mongodb+srv://dbccc:@ctest.s3vxw.mongodb.net/Social?retryWrites=true&w=majority';
-const connectionString = 'mongodb+srv://dbccc:1711@cluster0.h4kr0.mongodb.net/Social?retryWrites=true&w=majority'
+// const connectionString = 'mongodb+srv://dbccc:1711@cluster0.h4kr0.mongodb.net/Social?retryWrites=true&w=majority'
 
 
 
@@ -56,7 +56,7 @@ app.get('/articles/:id', getArticle);
 app.post('/article', addArticle);
 
 // Get the port from the environment, i.e., Heroku sets it
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
     const addr = server.address();
     console.log(`Server listening at http://${addr.address}:${addr.port}`)
