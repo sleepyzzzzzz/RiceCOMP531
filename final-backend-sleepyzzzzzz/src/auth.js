@@ -1,6 +1,6 @@
 const md5 = require('md5');
 const cookieParser = require('cookie-parser');
-// const redis = require('redis').createClient(process.env.REDIS_URI);
+const redis = require('redis').createClient(process.env.REDIS_URI);
 const session = require('express-session');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
@@ -14,11 +14,14 @@ const cookieKey = 'sid';
 let sessionUser = {};
 let userObj = {};
 
-// const server = 'http://localhost:3000';
-// const client = 'http://localhost:8080';
-const server = 'https://yz166-final-backend.herokuapp.com';
-const client = 'https://yz166-final-frontend.surge.sh';
+const server = 'http://localhost:3000';
+const client = 'http://localhost:8080';
+// const server = 'https://yz166-final-backend.herokuapp.com';
+// const client = 'https://yz166-final-frontend.surge.sh';
 const sub_pwd = '111';
+redis.on("error", function (err) {
+    console.log("Error " + err);
+});
 
 
 const getHash = (salt, password) => {
@@ -28,7 +31,7 @@ const getHash = (salt, password) => {
 const generate_session = (res, user, username) => {
     let sessionKey = md5(mySecretMessage + new Date().getTime() + username);
     sessionUser[sessionKey] = user;
-    // redis.hmset(sessionKey, user);
+    redis.hmset(sessionKey, user);
     res.cookie(cookieKey, sessionKey, { maxAge: 3600 * 1000, httpOnly: true, sameSite: 'None', secure: true });
     // res.cookie(cookieKey, sessionKey, { maxAge: 3600 * 1000, httpOnly: true });
 }
